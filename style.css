@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #28a745;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+/* Hero Section */
+#hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/cover.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+#hero .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Menu Section */
+#menu {
+    background-color: #fff;
+    padding-top: 30px;
+    animation: slideIn 1.5s ease-out;
+}
+
+#menu .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#menu .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Section */
+#blog {
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.card-img-top {
+    height: 200px; /* Tetapkan tinggi tetap */
+    width: 100%; /* Buat lebar sesuai dengan container */
+    object-fit: cover; /* Sesuaikan gambar tanpa distorsi */
+    border-radius: 5px; /* Tambahkan sedikit radius agar gambar terlihat lebih rapi */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Efek hover tetap */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
